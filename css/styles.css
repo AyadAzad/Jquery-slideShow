@@ -1,0 +1,92 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	color:#666;
+	font-size:13px;
+	background:#f4f4f4;
+	font-family:"Arial", sans-serif;
+}
+#container{
+    margin: 25px auto;
+    text-align: center;
+    width: 900px;
+    position: relative;
+
+}
+a, a:visited{
+    color: red;
+    text-decoration: none;
+    outline: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+p{
+    padding-top: 10px;
+    text-align: center;
+}
+header{
+    background: url(../img/panel.jpg) repeat-x bottom center #ffffff;
+    height: 2em;
+    padding-top: 5px;
+    border: 1px solid #ccc;
+}
+/* Adding shadow and background color to the slider */
+#slider{
+    margin-top: 10em;
+    -moz-box-shadow: 0 0 3px #aaaaaa;
+    -webkit-box-shadow: 0 0 3px #aaaaaa;
+    box-shadow: 0 0 3px #aaaaaa;
+    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: url(../img/panel.jpg) repeat-x bottom center #c1c7b8;
+    overflow: hidden;
+}
+/* To make the slide have one value or image */
+#slides{
+    height: 350px;
+    width: 900px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.slide{
+    float: left !important;
+}
+/* when we make the height 40 or 45px here, it is going to show the first 40px of the box */
+#menu{
+    
+    height: 40px;
+}
+#menu ul {
+    margin: 0;
+    padding: 10px;
+}
+#menu li{
+    width: 40px;
+    margin-left: -0.5em;
+    list-style: none;
+    display: inline-block;
+    height: 37px;
+    overflow: hidden;
+}
+/* we are going to use this in Jquery */
+#menu li.active,li.active:hover{
+    background: url(../img/active_bg.png) no-repeat;
+}
+#menu li.active{
+    cursor: default;
+}
+#menu .sep{
+    width: 2px;
+    background: url(../img/seperator.png) no-repeat right;
+    margin-right:-2px ;
+}
+#menu li a{
+    display: block;
+    background: url(../img/seperator.png) no-repeat left;
+}
